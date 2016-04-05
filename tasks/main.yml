@@ -1,0 +1,15 @@
+---
+# Create filesystem on target
+- name: Format the source mount
+  filesystem: fstype={{ item.fstype }} dev={{ item.source }} force=no
+  with_items: "{{ cloud_mounts }}"
+
+# Create directory
+- name: Makes sure destination dir is present
+  file: path={{ item.destination }} state=directory
+  with_items: "{{ cloud_mounts }}"
+
+# Mount DATA folder
+- name: Mount suorce to destination
+  mount: name={{ item.destination }} src={{ item.source }} fstype={{ item.fstype }} state=present
+  with_items: "{{ cloud_mounts }}"

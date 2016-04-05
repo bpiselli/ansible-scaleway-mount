@@ -1,0 +1,12 @@
+---
+
+## List ALL mounts you want to do
+#
+# You can simply list all mounts with following parmaeters
+# - source : source mount (for scaleway will look like /dev/nbd*)
+# - destination : destination folder (whatever folder you'd like)
+# - fstype : format type (usually 'ext4')
+cloud_mounts:
+  - source: '/dev/nbd1'
+    destination: '/mnt/data'
+    fstype: 'ext4'
