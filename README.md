@@ -9,7 +9,7 @@ It has initially been built for [Scaleway cloud services](https://www.scaleway.c
 
 This role requires at least Ansible `v2.0.0`. To install it, run:
 
-    ansible-galaxy install bpiselli.cloud-mount
+    ansible-galaxy install bpiselli.scaleway-mount
 
 ### Role Variables
 
