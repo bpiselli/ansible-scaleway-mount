@@ -1,6 +1,6 @@
 # ANSIBLE mount full
 
-Ansible script to mount additional volume no your server
+Ansible script to mount additional volume on your server
 
 This role can be used as a dependency of other roles to easily mount additional volume.   
 It has initially been built for [Scaleway cloud services](https://www.scaleway.com) but can be used for any mouting purpose. 

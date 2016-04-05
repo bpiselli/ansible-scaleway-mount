@@ -1,0 +1,18 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: bpiselli
+  description: Mount additional volumes on cloud servers (scaleway or other)
+  company: "SmartPlace, LLC"
+  license: GNU
+  min_ansible_version: 1.7.2
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  categories:
+    - system
