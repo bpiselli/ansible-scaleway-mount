@@ -11,5 +11,5 @@
 
 # Mount DATA folder
 - name: Mount suorce to destination
-  mount: name={{ item.destination }} src={{ item.source }} fstype={{ item.fstype }} state=present
+  mount: name={{ item.destination }} src={{ item.source }} fstype={{ item.fstype }} state=mounted
   with_items: "{{ cloud_mounts }}"
